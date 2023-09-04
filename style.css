@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600px;
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #323336;
+    color: white;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 10px;
+}
+
+.transparent {
+    background-color: #fff;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    opacity: 0;
+    top: 62px;
+    right: 60px;
+    z-index: 100;
+    color: #323336;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.transparent ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.more:hover .transparent {
+    opacity: 1;
+    visibility: visible;
+}
+
+ul {
+    display: flex;
+    width: 35%;
+    justify-content: end;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+li:hover {
+    background-color: #464444;
+}
+
+.more ul li:hover {
+    background-color: red;
+    color: white;
+
+}
+
+.more ul {
+    width: 100%;
+}
+
+/*section home*/
+
+#home {
+    background-image: url(images/ny.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    filter: grayscale();
+}
+
+h1 {
+    padding: 20px;
+    letter-spacing: 6px;
+    font-size: 1.5em;
+}
+
+#home img {
+    width: 100%;
+    position: relative;
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+/* section 2*/
+
+.container {
+    display: flex;
+    max-width: 1520px;
+    margin: auto;
+    text-align: center;
+}
+
+.band-name {
+    padding: 50px 0;
+    width: 60%;
+    margin: auto;
+    line-height: 25px;
+}
+
+#band h3 {
+    font-size: 2.5em;
+    padding-bottom: 50px;
+}
+
+.band-name p,
+.band-name i {
+    opacity: 0.6;
+}
+
+.name img {
+    border-radius: 150px;
+}
+
+.name p {
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.name {
+    display: flex;
+}
+
+.name-band {
+    padding: 0 30px;
+}
+
+/*section 3*/
+
+#tour {
+    background-color: #323336;
+    color: white;
+}
+
+#tour h3 {
+    font-size: 2.5em;
+    padding: 50px 0;
+}
+
+.tour-ensemble {
+    margin: auto;
+}
+
+.tour-ensemble i {
+    opacity: 0.7;
+}
+
+.month {
+    background-color: white;
+    color: #323336;
+    text-align: initial;
+    margin-bottom: 30px;
+    border: 3px solid grey;
+}
+
+.month p:nth-of-type(2) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.month p {
+    padding: 20px;
+}
+
+.month span {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 0.6em;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.notif {
+    float: right;
+    border-radius: 50px !important;
+    background-color: grey !important;
+    padding: 5px !important;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.portfolio-image-ville:nth-of-type(2) {}
+
+.portfolio-image-ville {
+    background-color: white;
+    color: #323336;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.portfolio-image-ville h5 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 15px;
+}
+
+.portfolio-image-ville p {
+    padding: 10px 0;
+}
+
+.portfolio-image-ville button {
+    background-color: #323336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+/*contact*/
+
+#contact {
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.contact-num {
+    margin: auto 40px;
+}
+
+.contact-num p {
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.formulaire-contact {
+    display: block;
+    width: 61%;
+}
+
+.formulaire-contact input {
+    width: 350px;
+    padding: 5px 0 5px 10px;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+textarea {
+    display: block;
+    width: 818px;
+    margin-top: 15px;
+    padding: 5px 0 5px 10px;
+}
+
+#name {
+    margin-right: 99px;
+}
+
+.formulaire-contact button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border-width: 1px;
+    float: right;
+    margin-right: 215px;
+    margin-top: 40px;
+}
+
+.formulaire-contact h2 {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.blog {
+    flex-direction: column;
+    margin: auto;
+}
+
+.blog h3 {
+    padding: 50px;
+    font-size: 2em;
+}
+
+.blog p {
+    text-align: initial;
+    width: 40%;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.blog p:nth-of-type(1) {
+    font-size: 1.5em;
+}
+
+.blog p:nth-of-type(2) {
+    padding: 10px 0 30px 0;
+}
+
+/*footer*/
+footer {
+    background-color: #323336;
+    color: white
+}
+
+footer p {
+    text-align: center;
+    padding: 80px;
+}
+
+footer a {
+    color: white;
+}
